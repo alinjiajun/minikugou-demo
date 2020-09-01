@@ -1,0 +1,19 @@
+<view class="pageWrap">
+  <navigator url="plugin-private://wx4f38007b839da9d3/pages/search-page/search-page">
+      <view class="search">更换歌曲</view>
+  </navigator>
+
+  <view class="param">
+    <view class="songname nowrap1">{{song.title}} - {{song.singer}}</view>
+    <text class="songParam">player.playSong({"hash":"{{song.hash}}", "album_audio_id": "{{song.albumAudioId}}"})</text>
+    <view class="tip">
+      <view>复制以上参数可以用于播放该歌曲</view>
+      <view>点下面的”更换歌曲“试试其它歌曲哦</view>
+    </view>
+    <button class="copybtn" bindtap="copyText">复制</button>
+  </view>
+</view>
+<view class="bg">
+  <image src="/asset/demo_bg.jpg" mode="aspectFill"></image>
+</view>
+<kugou-play/>

@@ -1,0 +1,28 @@
+{
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "音乐组件演示页",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light"
+  },
+  "pages": [
+    "pages/index/index"
+  ],
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "plugins": {
+    "kugouPlayer": {
+      "version": "1.0.10",
+      "provider": "wx4f38007b839da9d3"
+    }
+  },
+  "usingComponents": {
+    "kugou-play": "plugin://kugouPlayer/kugou-play"
+  },
+  "sitemapLocation": "sitemap.json",
+  "navigateToMiniProgramAppIdList": [
+    "wx4f38007b839da9d3"
+  ]
+}
